@@ -3,91 +3,116 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `Specializing in MERN stack, Java frameworks, Open-source projects and containerization tools. Eager AI enthusiast, ready to innovate and transform industries.`;
+export const HERO_CONTENT = `Backend-focused Software Engineer with 4.5 years of experience specializing in Java 17/21, Spring Boot 3.3, and enterprise integration. Expert in workflow automation using Camunda 7 and JBPM/Drools, with proven success in building scalable microservices architectures and event-driven systems using Kafka and ActiveMQ.`;
 
-export const ABOUT_TEXT = `With a strong background in programming and full-stack development, I have 3+ years of hands-on expertise in software engineering across a variety of technologies. I specialise in open-source projects, and excel at building scalable infrastructures that are suited to client specifications, with an emphasis on user-centric architectural principles. My experience includes JavaScript and TypeScript-based MERN stacks, as well as Java frameworks such as Spring Boot and Quarkus, which allow me to provide unique solutions for web applications and microservice architectures. I am passionate about driving efficiency and success, and I am committed to using these technologies to build effective solutions.`;
+export const ABOUT_TEXT = `Backend-focused Software Engineer with 4.5 years of experience in building enterprise-grade applications and microservices architectures. Specialized in Java 17/21 ecosystem with deep expertise in Spring Boot 3.3, workflow automation (Camunda 7, JBPM/Drools), and event-driven architectures using Kafka and ActiveMQ. Proven track record in leading technical initiatives from concept to production, implementing scalable solutions for hyperautomation platforms, BPM systems, and IoT integrations. Strong advocate for clean architecture, test-driven development, and continuous improvement in software delivery practices.`;
 
 export const SUCCESS_COUNTERS = [
   {
+    title: "Years of Experience",
+    counts: 4,
+  },
+  {
     title: "Professional Projects",
-    counts: 6,
+    counts: 5,
   },
   {
-    title: "Experience",
-    counts: 3,
-  },
-  {
-    title: "Achievements",
-    counts: 2,
+    title: "Technologies Mastered",
+    counts: 20,
   },
 ];
 
 export const EXPERIENCES = [
   {
-    year: "2024 - Present",
-    role: "Software Engineer",
-    company: "Innomaint - Vijay Global Services",
-    description: `Led a team in developing and maintaining web applications using JavaScript & Typescript and Node.js & Nest.js. Implemented RESTful APIs and integrated with MongoDB/Postgres databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    year: "Jan 2025 - Present",
+    role: "Associate Technical Lead",
+    company: "Bautomate",
+    description: `Leading technical initiatives for Bautomate's AI-powered HyperAutomation Platform. Architecting and implementing workflow automation solutions using Camunda 7 and Spring Boot 3.3. Driving integration of AI capabilities with business process automation to deliver intelligent automation solutions. Mentoring development team and establishing best practices for microservices architecture and event-driven systems.`,
     technologies: [
-      "Javascript",
-      "Typescript",
-      "Node.js",
-      "Springboot",
-      "React.js",
-      "Next.js",
-      "MongoDB",
+      "Java 17/21",
+      "Spring Boot 3.3",
+      "Camunda 7",
+      "Microservices",
       "Kafka",
-      "Postgres",
+      "AI Integration",
+      "REST APIs",
+      "Docker",
+      "AWS",
     ],
   },
   {
-    year: "2021 - 2023",
+    year: "Jan 2024 - Dec 2024",
+    role: "Software Engineer",
+    company: "Innomaint - Vijay Global Services",
+    description: `Developed comprehensive BPM solutions using JBPM/Drools and integrated IoT device management platforms. Built scalable observability dashboards for real-time monitoring and analytics. Led CitiBank's Overdraft Application Modernization project, migrating legacy systems to modern microservices architecture. Implemented event-driven architectures using Kafka and ActiveMQ for high-throughput data processing.`,
+    technologies: [
+      "Java 17",
+      "Spring Boot",
+      "JBPM/Drools",
+      "Camunda",
+      "Kafka",
+      "ActiveMQ",
+      "IoT",
+      "PostgreSQL",
+      "MongoDB",
+      "Keycloak",
+    ],
+  },
+  {
+    year: "Sep 2021 - Dec 2023",
     role: "Software Engineer",
     company: "Zaga Open Source Private Limited",
-    description: `Designed and developed user interfaces for web applications using Java frameworks, React.js, and container orchestration tools. Collaborated closely with backend and frontend developers to create end-to-end UI components. Implemented responsive designs and optimized both frontend and backend performance.`,
+    description: `Designed and developed microservices-based applications using Java frameworks including Spring Boot and Quarkus. Built scalable RESTful APIs and integrated with various databases. Implemented event-driven architectures and message brokers for asynchronous communication. Collaborated with cross-functional teams to deliver full-stack solutions using React.js and modern frontend technologies.`,
     technologies: [
       "Java",
-      "Javascript",
+      "Spring Boot",
+      "Quarkus",
+      "Kafka",
       "React.js",
       "Node.js",
-      "Springboot",
-      "Quarkus",
       "MongoDB",
-      "Kafka",
+      "PostgreSQL",
       "Docker",
-      "Postgresql",
+      "Apache Camel",
     ],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Bautomate - AI HyperAutomation Platform",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Enterprise-grade hyperautomation platform integrating AI capabilities with business process automation. Built using Camunda 7 for workflow orchestration, Spring Boot 3.3 for microservices, and event-driven architecture for scalable automation solutions.",
+    technologies: ["Java 21", "Spring Boot 3.3", "Camunda 7", "Kafka", "AI/ML", "Microservices", "Docker", "AWS"],
   },
   {
-    title: "Task Management App",
+    title: "InnoMaint BPM - Business Process Management",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Comprehensive BPM solution built with JBPM/Drools for rule-based workflow automation. Implemented complex business rules engine, process orchestration, and integration with enterprise systems. Achieved 40% reduction in manual processing time.",
+    technologies: ["Java 17", "JBPM", "Drools", "Spring Boot", "Camunda", "PostgreSQL", "REST APIs"],
   },
   {
-    title: "Portfolio Website",
+    title: "InnoMaint IoT - Device Management Platform",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Scalable IoT platform for real-time device monitoring and management. Implemented MQTT protocol for device communication, event-driven architecture using Kafka for data ingestion, and real-time analytics dashboard for monitoring thousands of connected devices.",
+    technologies: ["Java 17", "Spring Boot", "Kafka", "MQTT", "MongoDB", "Redis", "WebSockets", "React.js"],
   },
   {
-    title: "Blogging Platform",
+    title: "Observability Dashboard - Monitoring & Analytics",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Enterprise observability solution for real-time system monitoring and analytics. Built distributed tracing, metrics collection, and log aggregation system. Integrated with ELK stack and Prometheus for comprehensive monitoring of microservices architecture.",
+    technologies: ["Java", "Spring Boot", "ELK Stack", "Prometheus", "Grafana", "Kafka", "Time Series DB"],
+  },
+  {
+    title: "CitiBank Overdraft Modernization",
+    image: project1,
+    description:
+      "Led modernization of legacy overdraft application for CitiBank. Migrated monolithic architecture to microservices, implemented event-driven patterns using ActiveMQ and Kafka, and integrated with core banking systems. Improved transaction processing speed by 60%.",
+    technologies: ["Java 17", "Spring Boot", "ActiveMQ", "Kafka", "Oracle DB", "Keycloak", "REST APIs", "Docker"],
   },
 ];
 

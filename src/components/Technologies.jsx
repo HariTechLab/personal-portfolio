@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { motion } from "framer-motion";
 import { RiReactjsLine, RiJavaLine, RiNodejsLine } from "react-icons/ri";
 import { TbBrandJavascript, TbBrandTypescript } from "react-icons/tb";
@@ -80,35 +79,35 @@ const IconWithText = ({ Icon, colorClass, label, delay }) => {
   );
 };
 
-export default class Technologies extends Component {
-  render() {
-    return (
-      <div className="border-b border-neutral-900 pb-32">
-        <motion.h1
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -100 }}
-          transition={{ duration: 0.5 }}
-          className="my-20 text-center text-4xl"
-        >
-          Technologies
-        </motion.h1>
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1.5 }}
-          className="flex flex-wrap items-center justify-center gap-4"
-        >
-          {icons.map(({ Icon, colorClass, label, delay }) => (
-            <IconWithText
-              key={label}
-              Icon={Icon}
-              colorClass={colorClass}
-              label={label}
-              delay={delay}
-            />
-          ))}
-        </motion.div>
-      </div>
-    );
-  }
-}
+const Technologies = () => {
+  return (
+    <div className="border-b border-neutral-900 pb-32">
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+        className="my-20 text-center text-4xl"
+      >
+        Technologies
+      </motion.h1>
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-wrap items-center justify-center gap-4"
+      >
+        {icons.map(({ Icon, colorClass, label, delay }) => (
+          <IconWithText
+            key={label}
+            Icon={Icon}
+            colorClass={colorClass}
+            label={label}
+            delay={delay}
+          />
+        ))}
+      </motion.div>
+    </div>
+  );
+};
+
+export default Technologies;
